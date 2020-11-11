@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MLM Company</title>
+    <title>SB Admin 2 - Tables</title>
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -273,7 +273,8 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
+                                            alt="">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -284,7 +285,8 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
+                                            alt="">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -295,7 +297,8 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
+                                            alt="">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -327,7 +330,8 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -362,60 +366,272 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Add Member</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Tikets Information</h6>
                         </div>
-
                         <div class="card-body">
-                            <form action="" method="post">
-                                <div class="form-group">
-                                    <label for="exampleInputName">Name</label>
-                                    <input type="text" class="form-control" id="exampleInputName"
-                                        placeholder="Enter Name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        placeholder="Enter email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleUsername">Username</label>
-                                    <input type="text" class="form-control" id="exampleUsername" placeholder="Username">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1"
-                                        placeholder="Password">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputRank">Rank</label>
-                                    <select class="custom-select">
-                                        <option>1 Star</option>
-                                        <option>2 Star</option>
-                                        <option>3 Star</option>
-                                        <option>4 Star</option>
-                                        <option>5 Star</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputFile">Profile Picture</label>
-                                    <div class="input-group">
-                                        <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="exampleInputFile">
-                                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                                        </div>
-                                        <div class="input-group-append">
-                                            <span class="input-group-text" id="">Upload</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <button class="btn btn-primary">Add Meber</button>
-                                </div>
-                            </form>
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Ticket Name</th>
+                                            <th>Price</th>
+                                            <th>Point</th>
+                                            <th>Create Date</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Ticket Name</th>
+                                            <th>Price</th>
+                                            <th>Point</th>
+                                            <th>Create Date</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Test name</td>
+                                            <td>$250</td>
+                                            <td>1,000</td>
+                                            <td>10/11/2020</td>
+                                            <td>
+                                                <span class="text-success font-weight-bold">Active</span>
+                                                <a href="#" >
+                                                    <i class="fas fa-edit ml-3"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Test name</td>
+                                            <td>$250</td>
+                                            <td>1,000</td>
+                                            <td>10/11/2020</td>
+                                            <td>
+                                                <span class="text-success font-weight-bold">Active</span>
+                                                <a href="#" >
+                                                    <i class="fas fa-edit ml-3"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Test name</td>
+                                            <td>$250</td>
+                                            <td>1,000</td>
+                                            <td>10/11/2020</td>
+                                            <td>
+                                                <span class="text-success font-weight-bold">Active</span>
+                                                <a href="#" >
+                                                    <i class="fas fa-edit ml-3"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Test name</td>
+                                            <td>$250</td>
+                                            <td>1,000</td>
+                                            <td>10/11/2020</td>
+                                            <td>
+                                                <span class="text-success font-weight-bold">Active</span>
+                                                <a href="#" >
+                                                    <i class="fas fa-edit ml-3"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Test name</td>
+                                            <td>$250</td>
+                                            <td>1,000</td>
+                                            <td>10/11/2020</td>
+                                            <td>
+                                                <span class="text-success font-weight-bold">Active</span>
+                                                <a href="#" >
+                                                    <i class="fas fa-edit ml-3"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Test name</td>
+                                            <td>$250</td>
+                                            <td>1,000</td>
+                                            <td>10/11/2020</td>
+                                            <td>
+                                                <span class="text-success font-weight-bold">Active</span>
+                                                <a href="#" >
+                                                    <i class="fas fa-edit ml-3"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Test name</td>
+                                            <td>$250</td>
+                                            <td>1,000</td>
+                                            <td>10/11/2020</td>
+                                            <td>
+                                                <span class="text-success font-weight-bold">Active</span>
+                                                <a href="#" >
+                                                    <i class="fas fa-edit ml-3"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Test name</td>
+                                            <td>$250</td>
+                                            <td>1,000</td>
+                                            <td>10/11/2020</td>
+                                            <td>
+                                                <span class="text-success font-weight-bold">Active</span>
+                                                <a href="#" >
+                                                    <i class="fas fa-edit ml-3"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Test name</td>
+                                            <td>$250</td>
+                                            <td>1,000</td>
+                                            <td>10/11/2020</td>
+                                            <td>
+                                                <span class="text-success font-weight-bold">Active</span>
+                                                <a href="#" >
+                                                    <i class="fas fa-edit ml-3"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Test name</td>
+                                            <td>$250</td>
+                                            <td>1,000</td>
+                                            <td>10/11/2020</td>
+                                            <td>
+                                                <span class="text-success font-weight-bold">Active</span>
+                                                <a href="#" >
+                                                    <i class="fas fa-edit ml-3"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Test name</td>
+                                            <td>$250</td>
+                                            <td>1,000</td>
+                                            <td>10/11/2020</td>
+                                            <td>
+                                                <span class="text-success font-weight-bold">Active</span>
+                                                <a href="#" >
+                                                    <i class="fas fa-edit ml-3"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Test name</td>
+                                            <td>$250</td>
+                                            <td>1,000</td>
+                                            <td>10/11/2020</td>
+                                            <td>
+                                                <span class="text-success font-weight-bold">Active</span>
+                                                <a href="#" >
+                                                    <i class="fas fa-edit ml-3"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Test name</td>
+                                            <td>$250</td>
+                                            <td>1,000</td>
+                                            <td>10/11/2020</td>
+                                            <td>
+                                                <span class="text-success font-weight-bold">Active</span>
+                                                <a href="#" >
+                                                    <i class="fas fa-edit ml-3"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Test name</td>
+                                            <td>$250</td>
+                                            <td>1,000</td>
+                                            <td>10/11/2020</td>
+                                            <td>
+                                                <span class="text-success font-weight-bold">Active</span>
+                                                <a href="#" >
+                                                    <i class="fas fa-edit ml-3"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Test name</td>
+                                            <td>$250</td>
+                                            <td>1,000</td>
+                                            <td>10/11/2020</td>
+                                            <td>
+                                                <span class="text-success font-weight-bold">Active</span>
+                                                <a href="#" >
+                                                    <i class="fas fa-edit ml-3"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Test name</td>
+                                            <td>$250</td>
+                                            <td>1,000</td>
+                                            <td>10/11/2020</td>
+                                            <td>
+                                                <span class="text-success font-weight-bold">Active</span>
+                                                <a href="#" >
+                                                    <i class="fas fa-edit ml-3"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Test name</td>
+                                            <td>$250</td>
+                                            <td>1,000</td>
+                                            <td>10/11/2020</td>
+                                            <td>
+                                                <span class="text-success font-weight-bold">Active</span>
+                                                <a href="#" >
+                                                    <i class="fas fa-edit ml-3"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Test name</td>
+                                            <td>$250</td>
+                                            <td>1,000</td>
+                                            <td>10/11/2020</td>
+                                            <td>
+                                                <span class="text-success font-weight-bold">Active</span>
+                                                <a href="#" >
+                                                    <i class="fas fa-edit ml-3"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                       
 
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-
-
                     </div>
 
                 </div>
